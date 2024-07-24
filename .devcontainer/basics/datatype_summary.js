@@ -15,3 +15,14 @@ const myFun = function(){
 
 console.log(typeof(heros))
 console.log(typeof (myFun))
+
+// stack (primitive) heap (non-primitive)
+let userOne ={
+    email: "sravya@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+console.log(userTwo);
+
+userTwo.email = "savya@yahoo.com"
+console.log(userOne)    ///heap memory allocated direct reference
